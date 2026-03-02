@@ -1,5 +1,4 @@
-# ApexaIQintern
-# ApexaiQ and Enterprise Cybersecurity Documentation
+# ApexaiQ Internship Documentation
 
 ---
 
@@ -9,24 +8,24 @@
 ApexaiQ is a CAASM (Cyber Asset Attack Surface Management) platform that centralizes asset visibility, correlates risk, and prioritizes remediation across enterprise environments.
 
 ### Core Problem
-Modern organizations operate in fragmented IT ecosystems where asset data is distributed across multiple tools, creating blind spots and security gaps.
+Modern organizations operate in fragmented Information Technology (IT) ecosystems where asset data is distributed across multiple tools, creating blind spots and security gaps.
 
 ### Detailed Explanation
 
 #### Multi-Cloud Environments
-Organizations use AWS, Azure, and GCP simultaneously, leading to distributed and inconsistent asset data.
+Organizations use Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) simultaneously, leading to distributed and inconsistent asset data.
 
-#### SaaS Ecosystems
-Applications like CRM, HRMS, and collaboration platforms operate outside traditional infrastructure monitoring.
+#### Software as a Service (SaaS) Ecosystems
+Applications like Customer Relationship Management (CRM), Human Resource Management System (HRMS), and collaboration platforms operate outside traditional infrastructure monitoring.
 
 #### Hybrid Infrastructure
-On-prem servers and cloud workloads coexist, increasing tracking complexity.
+On-premises servers and cloud workloads coexist, increasing tracking complexity.
 
 #### DevOps Pipelines
-Containers and CI/CD processes create temporary, dynamic assets that are difficult to track.
+Containers and Continuous Integration / Continuous Deployment (CI/CD) processes create temporary, dynamic assets that are difficult to track.
 
 #### Disconnected Tools
-EDR, CMDB, ITSM, vulnerability scanners, and cloud consoles store data separately, causing inconsistencies.
+Endpoint Detection and Response (EDR), Configuration Management Database (CMDB), Information Technology Service Management (ITSM), vulnerability scanners, and cloud consoles store data separately, causing inconsistencies.
 
 ---
 
@@ -39,7 +38,7 @@ Collects asset data from security and IT systems.
 Standardizes inconsistent naming formats and metadata.
 
 #### Gap Identification
-Detects missing security controls such as systems without EDR.
+Detects missing security controls such as systems without Endpoint Detection and Response (EDR).
 
 #### Risk Prioritization
 Ranks vulnerabilities based on severity, exposure, and business impact.
@@ -54,7 +53,7 @@ Generates a unified security posture score reflecting hygiene and compliance.
 ### A. Enterprises
 
 1. Asset Visibility Gaps – Cloud and remote assets remain untracked.
-2. Shadow IT – Unauthorized tools bypass security monitoring.
+2. Shadow IT (Information Technology) – Unauthorized tools bypass security monitoring.
 3. Vulnerability Management Gaps – Not all assets are scanned or patched in time.
 4. Compliance Pressure – Organizations must demonstrate governance and control.
 5. Tool Sprawl – Multiple security tools create isolated data silos.
@@ -62,7 +61,7 @@ Generates a unified security posture score reflecting hygiene and compliance.
 ### B. MSPs (Managed Service Providers)
 
 1. Multi-Client Complexity – Managing diverse environments increases operational overhead.
-2. SLA Monitoring – Contractual timelines require continuous tracking.
+2. SLA (Service Level Agreement) Monitoring – Contractual timelines require continuous tracking.
 3. Inventory Accuracy – Frequent changes impact asset visibility.
 4. Reporting Automation – Clients demand periodic executive-level reports.
 5. Cost Optimization – Balancing service depth with profitability is challenging.
@@ -76,10 +75,10 @@ A cyber asset is any digital resource that stores, processes, or transmits data.
 
 ### Examples
 - Servers – Provide computing infrastructure.
-- Containers – Lightweight environments for applications.
-- APIs – Interfaces enabling system communication.
-- SaaS Applications – Cloud-hosted software.
-- Endpoints – Laptops and desktops.
+- Containers – Lightweight virtualization environments for applications.
+- APIs (Application Programming Interfaces) – Interfaces enabling system communication.
+- SaaS (Software as a Service) Applications – Cloud-hosted software.
+- Endpoints – Laptops, desktops, and mobile devices.
 
 ---
 
@@ -91,12 +90,12 @@ Continuous identification of digital assets within an environment.
 ### Methods
 - Active Scanning – Network probing to detect devices.
 - Passive Monitoring – Analyzing network traffic patterns.
-- API Integrations – Pulling asset data from cloud providers.
+- API (Application Programming Interface) Integrations – Pulling asset data from cloud providers.
 - Agent-Based Discovery – Installing software agents for telemetry collection.
 
 ---
 
-## 5. Shadow IT
+## 5. Shadow IT (Information Technology)
 
 ### Definition
 Technology used without IT department approval.
@@ -123,14 +122,14 @@ An exploitable weakness in software, hardware, configuration, or architecture.
 
 ## 7. Vulnerability Standards
 
-- CVE – Unique identifier for vulnerabilities.
-- CVSS – Severity scoring framework from 0 to 10.
-  - Base Score
-  - Temporal Score
-  - Environmental Score
-- NVD – US government vulnerability database.
-- OWASP Top 10 – Critical web application risks.
-- CPE – Standard naming system for affected products.
+- CVE (Common Vulnerabilities and Exposures) – Unique identifier for vulnerabilities.
+- CVSS (Common Vulnerability Scoring System) – Severity scoring framework from 0 to 10.
+  - Base Score – Measures intrinsic exploitability and impact.
+  - Temporal Score – Adjusts severity based on exploit maturity.
+  - Environmental Score – Customizes severity based on business context.
+- NVD (National Vulnerability Database) – United States government vulnerability database.
+- OWASP (Open Web Application Security Project) Top 10 – Critical web application risks.
+- CPE (Common Platform Enumeration) – Standard naming system for affected products.
 
 ---
 
@@ -140,10 +139,10 @@ An exploitable weakness in software, hardware, configuration, or architecture.
 Process of eliminating or mitigating identified vulnerabilities.
 
 ### Methods
-- Patch Update
-- Configuration Hardening
-- Service Disablement
-- Compensating Controls
+- Patch Update – Installing vendor-provided fixes.
+- Configuration Hardening – Strengthening security settings.
+- Service Disablement – Turning off unnecessary services.
+- Compensating Controls – Alternative protective measures.
 
 ### Lifecycle
 1. Detect
@@ -154,7 +153,7 @@ Process of eliminating or mitigating identified vulnerabilities.
 
 ---
 
-## 9. CMDB
+## 9. CMDB (Configuration Management Database)
 
 ### Definition
 Centralized database storing asset inventory and relationships.
@@ -169,12 +168,14 @@ Centralized database storing asset inventory and relationships.
 
 ## 10. ITSM vs ITAM
 
-### ITSM (IT Service Management)
+### ITSM (Information Technology Service Management)
+Framework for delivering IT services.
 - Incident Management
 - Change Management
 - Problem Management
 
-### ITAM (IT Asset Management)
+### ITAM (Information Technology Asset Management)
+Governance of asset lifecycle.
 - Procurement
 - License Tracking
 - Depreciation Tracking
@@ -209,13 +210,13 @@ Total exploitable entry points in an environment.
 
 ## 13. MSP vs MSSP
 
-### MSP
+### MSP (Managed Service Provider)
 Manages IT infrastructure services.
 
-### MSSP
-Specializes in cybersecurity and SOC operations.
+### MSSP (Managed Security Service Provider)
+Specializes in cybersecurity and Security Operations Center (SOC) operations.
 - SOC Monitoring
-- SIEM Management
+- SIEM (Security Information and Event Management) Management
 
 ---
 
@@ -229,7 +230,7 @@ Single platform serving multiple customers securely.
 
 ---
 
-## 15. SLA Compliance
+## 15. SLA (Service Level Agreement) Compliance
 
 ### Definition
 Adherence to contractual service metrics.
@@ -241,7 +242,7 @@ Adherence to contractual service metrics.
 
 ---
 
-## 16. RBAC
+## 16. RBAC (Role-Based Access Control)
 
 ### Definition
 Access control based on predefined roles.
@@ -274,7 +275,7 @@ Security alerts incorrectly flagged as threats.
 
 ---
 
-## 19. CAASM
+## 19. CAASM (Cyber Asset Attack Surface Management)
 
 ### Definition
 Security discipline providing unified asset visibility and risk correlation.
@@ -287,13 +288,13 @@ Security discipline providing unified asset visibility and risk correlation.
 
 ## 20. EDR vs XDR
 
-### EDR
+### EDR (Endpoint Detection and Response)
 Endpoint-focused detection and response.
 - Process Monitoring
 - File Monitoring
 - Behavioral Detection
 
-### XDR
+### XDR (Extended Detection and Response)
 Cross-domain detection across endpoint, cloud, network, and identity.
 - Telemetry Correlation
 - Automated Response
@@ -303,11 +304,12 @@ Cross-domain detection across endpoint, cloud, network, and identity.
 
 ## Additional Critical Concepts
 
-- IAM – Manages authentication and authorization.
-- MTTR – Mean Time To Remediate.
+- IAM (Identity and Access Management) – Manages authentication and authorization.
+- MTTR (Mean Time To Remediate) – Measures average time to remediate vulnerabilities.
 - Vulnerability Scanners – Automated weakness detection tools.
-- Google SecOps – Cloud-native SIEM and SOAR platform.
+- Google SecOps (Google Security Operations) – Cloud-native SIEM and SOAR (Security Orchestration, Automation, and Response) platform.
 
 ---
 
 ## Enterprise Security Workflow
+
