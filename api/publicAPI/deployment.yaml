@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apexaiq
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apexaiq
+  template:
+    metadata:
+      labels:
+        app: apexaiq
+    spec:
+      containers:
+        - name: apexaiq
+          image: docker.io/library/newapi:latest 
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8000
+              protocol: TCP
